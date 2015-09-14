@@ -1,8 +1,31 @@
 <resources>
+    <style name="CustomToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="Theme.MyApp.ActionBar" parent="style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="elevation">0dp</item>
+    </style>
+
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!-- action bar background-->
+        <item name="colorPrimary">@color/theme_base</item>
+
+        <!-- action bar text color-->
+        <!--<item name="android:textColorPrimary">#00ff00</item>-->
+
+        <!-- -->
+        <item name="colorPrimaryDark">#ff0000</item>
+
+        <!-- select button color, such as checking radio button -->
+        <item name="colorAccent">@color/theme_base</item>
+
+        <!--<item name="actionBarStyle">@style/Theme.MyApp.ActionBar</item>
+       <item name="toolbarStyle">@style/CustomToolbarStyle</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--&lt;!&ndash; Remove shadow below action bar Android < 5.0 &ndash;&gt;
+       <item name="android:windowContentOverlay">@null</item>-->
     </style>
 
 </resources>
